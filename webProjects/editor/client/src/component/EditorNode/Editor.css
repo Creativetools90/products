@@ -41,7 +41,6 @@
 .left_result_pad {
   flex: 1;
   height: 100%;
-  width: 100px;
 }
 .result {
   background-color: transparent;
