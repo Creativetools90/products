@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    padding: 10px 20px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2px solid var(--lightBLue);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navMenus{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.textLogo{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navAction{
+    padding: 5px 15px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: none;
+    text-transform: capitalize;
+    background-color: var(--lightBLue);
+    box-shadow: 5px 5px 12px #435ea1a9;
+}
+.navAction.outLinedButton{
+    background-color: transparent;
+    border: 1px solid var(--lightBLue);
+    box-shadow: 5px 5px 10px #435ea174;
+}
+

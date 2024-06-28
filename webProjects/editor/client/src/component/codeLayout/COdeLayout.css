@@ -1,0 +1,304 @@
+.codeLayoutStripe {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgba(38, 46, 83, 0.408); */
+  margin: 0px 10px 0px 10px;
+}
+.iconColor {
+  background-color: white;
+}
+
+.productName {
+  padding: 5px;
+}
+.projectTitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.fileName{
+    margin-left: 5px;
+    color: grey;
+    font-size: 15px;
+}
+.title p:hover {
+  color: rgba(203, 203, 203, 0.897);
+  border-bottom: 1px solid rgba(203, 203, 203, 0.897);
+}
+.titleLable {
+  margin-left: 20px;
+  font-size: 12px;
+  display: none;
+  transition: 1s;
+}
+.title:hover .titleLable {
+  display: block;
+  transition: 1s;
+}
+
+.editProjectName {
+    background-color: rgb(15, 14, 14);
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  z-index: 333;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  display: none;
+}
+.otherLayout {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.e_pro_ttil {
+  width: 100%;
+  padding: 5px;
+  color: black;
+  font-size: 20px;
+  outline: nonw;
+  border: none;
+}
+
+.l_bar {
+  background-color: transparent;
+  border: 1px solid var(--lightBLue);
+  box-shadow: 5px 5px 10px #435ea13a;
+  padding: 10px;
+  position: relative;
+}
+
+.settingBar{
+  background-color: rgb(19, 18, 18);
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 150%;
+  width: 400px;
+  height: 600px;
+  z-index: 444;
+  padding: 10px;
+  display: none;
+  overflow-y: scroll;
+}
+.s_heading{
+  font-size: 20px;
+  padding: 5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  font-weight: 600;
+}
+
+
+.cencal{
+  display: none;
+}
+
+
+
+
+
+
+/* setting bar style */
+.settingoption{
+  margin-top: 13px;
+
+}
+.smenu li {
+  font-size: 17px;
+  text-transform: capitalize;
+  background-color: rgb(42, 38, 38);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.smenu li button{
+  background-color: var(--lightBLue);
+  padding-left: 10px;
+  padding-right: 20px;
+  transition: 0.4s;
+}
+.smenu li button:hover{
+  background-color: black;
+}
+.smenu{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.s_title{
+  padding: 3px;
+}
+
+.s_t01{
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.userselecting{
+  background-color: rgb(30, 27, 27);
+  color: white;
+  padding: 5px;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layoutEditor {
+  position: relative;
+}
+.lay_bar_option {
+  background-color: #38518fd8;
+  position: absolute;
+  top: 120%;
+  left: -200%;
+  width: auto;
+  height: auto;
+  z-index: 33;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+._heaidng {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.l_grid {
+  margin-top: 10px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.562);
+  gap: 2rem;
+}
+
+.l_grid svg {
+  width: 50px;
+}
+.l_grid svg:hover {
+  background-color: white;
+  padding: 10px;
+}
+.l_grid svg:nth-child(1) {
+  transform: rotate(-90deg);
+}
+.l_grid svg:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.view {
+  margin-top: 10px;
+  padding: 2px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 14px;
+}
+
+.showmenu{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .showmenu{
+        display: block;
+    }
+    .otherLayout{
+       display: none;
+    }
+    .openMenubar{
+        background-color: black;
+        color: white;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        height: 100%;
+        flex-direction: column;
+        transition: 1s ;
+        display: flex;
+        gap: 1rem;
+        padding: 10px;
+    }
+    .settingBar{
+      background-color: rgb(19, 18, 18);
+      color: white;
+      position: fixed;
+      left: 0;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      z-index: 444;
+      padding: 10px;
+      display: none;
+      overflow-y: scroll;
+    }
+    .s_heading{
+      display: flex;
+      align-items: center;
+      justify-content: space-between ;
+      padding-bottom: 10px;
+    }
+    .cencal{
+      display: block;
+      text-transform: capitalize;
+      font-size: 15px;
+      color: var(--lightBLue);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .cencal:hover{
+      color: white;
+    }
+}
