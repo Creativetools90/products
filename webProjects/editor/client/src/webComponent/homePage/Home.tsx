@@ -4,17 +4,21 @@ import "./Home.css"
 const Home = () => {
     return (
         <div className='homePageContainer p-2 m-auto my-4 ' >
-            <div className="BannerHeroContainer gap-2  flex flex-col  justify-center ">
-                <div className="bannerHeading  p-2 text-center ">
+            <div className="BannerHeroContainer  ">
+                <div className="bannerHeading text-center ">
                     <h2>Try & Practice your code in webEditor</h2>
                 </div>
-                <div className="tryNow flex p-2 items-center gap-6 flex-row justify-center ">
+                <div className="tryNow flex items-center gap-6 flex-row justify-center ">
 
-                    <Link to="/demoCode" >try demo code</Link>
-                    <Link to="/demoCode" >Make Project</Link>
+                    <Link to="/demoCode" className='demoBtnLink' >try demo code</Link>
+                    <div className="g_l_b_btn">
+                   <div className="btncover">
+                   <Link to="/demoCode" className='m_pro_link' >Make Project</Link>
+                   </div>
+                    </div>
                 </div>
             </div>
-            <div className="other"></div>
+            
         </div>
     )
 }

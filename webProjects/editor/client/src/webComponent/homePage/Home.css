@@ -27,12 +27,69 @@
 }
 
 .homePageContainer{
-    background-color: palegreen;
+    /* background-color: palegreen; */
     max-width: 1800px;
-    height: 90vh;
-}
-.BannerHeroContainer{
-    background-color: crimson;
-    margin-top: 22px;
     height: 100%;
 }
+.BannerHeroContainer{
+    /* background-color: palevioletred; */
+    margin-top: 22px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 5px;
+}
+/* .bannerHeading{
+    background-color: paleturquoise;
+}
+.tryNow{
+    background-color: #80d0c7;
+} */
+ .demoBtnLink{
+    padding: 10px 20px 15px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background: -webkit-linear-gradient(43deg, #364dbd 0%, #ac3ea4 46%, #e1b35c 100%);
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    font-size: 17px;
+
+ }
+ .m_pro_link{
+   
+    text-transform: capitalize;
+    font-weight: 500;
+    background: -webkit-linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    border: 1px  linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
+   
+ }
+ .g_l_b_btn{
+    background: -webkit-linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
+    position: relative;
+    padding: 10px 20px 15px;
+    border-radius: 6px;
+    width: 159.38px;
+    height: 50.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+ }
+ .btncover{
+    border-radius: 6px;
+    margin: auto;
+    position: absolute;
+    top: 1%;
+    width: 99%;
+    height: 97%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
