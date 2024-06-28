@@ -39,19 +39,32 @@
   border-radius: 5px; 
 }
 .left_result_pad {
-  flex: 2;
+  flex: 1;
   height: 100%;
   width: 100px;
 }
 .result {
   background-color: transparent;
   border: 1px solid var(--lightBLue);
-  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  flex-direction: column;
 
+}
+.tabO{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  width: 100%;
+}
+.outputTab{
+  display: flex;
+  gap: 0.5rem;
 }
 
 .inputBar {
