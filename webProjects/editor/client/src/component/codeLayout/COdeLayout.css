@@ -99,6 +99,23 @@
   display: none;
   overflow-y: scroll;
 }
+.settingBar::-webkit-scrollbar {
+  display: block;
+}
+
+
+.settingBar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.settingBar::-webkit-scrollbar-track {
+  background: var(--lightBLue);
+}
+
+.settingBar::-webkit-scrollbar-thumb {
+  background: var(--lightBLue);
+  border-radius: 5px; 
+}
 .s_heading{
   font-size: 20px;
   padding: 5px;
@@ -120,7 +137,6 @@
 /* setting bar style */
 .settingoption{
   margin-top: 13px;
-
 }
 .smenu li {
   font-size: 17px;
@@ -284,6 +300,7 @@
       display: none;
       overflow-y: scroll;
     }
+    
     .s_heading{
       display: flex;
       align-items: center;
