@@ -38,11 +38,12 @@
 }
 .BannerHeroContainer{
     margin-top: 22px;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
     padding: 5px;
+    padding-bottom: 50px;
 }
 
 .tryNow{
@@ -79,14 +80,13 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    animation: op 5s linear infinite;
-    transition: 3s;
+    background: -webkit-linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
  }
  .btncover{
     border-radius: 6px;
     margin: auto;
     position: absolute;
-    top: 1%;
+    top: 2%;
     width: 99%;
     height: 97%;
     background-color: black;
@@ -96,18 +96,34 @@
 
  }
 
- @keyframes op {
-    0%{
-        background: -webkit-linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
-        transition: 3s;
-    }
+ /* code base css */
 
-    80%{
-        background:transparent;
-        transition: 3s;
-    }
-    100%{
-        background: -webkit-linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
-        transition: 3s;
-    }
+ .codeBaseContainer{
+    /* background-color: #364dbd; */
+    padding: 20px 50px;
+    border: 1px solid #364dbd79;
+ }
+ .c_heading{
+    font-size: 30px;
+  font-weight: 455;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: -webkit-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+.code_snippet{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+ .s_01_{
+    width: 500px;
+    height: 400px;
+    background-color: #1c1e20d3;
+    overflow: hidden;
+    border-radius: 20px;
  }

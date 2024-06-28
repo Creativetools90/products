@@ -18,7 +18,14 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            
+            <section className="codeBaseContainer">
+                <h3 className='c_heading' >Languages CodeBase</h3>
+                <div className="code_snippet">
+                    <div className="s_01_"></div>
+                    <div className="s_01_"></div>
+                    <div className="s_01_"></div>
+                </div>
+            </section>
         </div>
     )
 }
