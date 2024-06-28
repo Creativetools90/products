@@ -12,6 +12,9 @@ const Navbar = () => {
             <div className="menus">
                 <ul className="navMenus">
                     <li className="navLink">
+                        <button className="navAction">demo code</button>
+                    </li>
+                    <li className="navLink">
                         <button className="navAction">sign in</button>
                     </li>
                     <li className="navLink">
