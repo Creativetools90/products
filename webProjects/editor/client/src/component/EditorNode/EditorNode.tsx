@@ -19,7 +19,7 @@ const EditorNode = () => {
             <div 
                 className={`result left_result_pad`} 
                 style={{ 
-                    flex: quitwindow ? 0.2 : 2, 
+                    flex: quitwindow ? 0.1 : 2, 
                 }
                 
             }
