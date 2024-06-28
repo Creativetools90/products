@@ -1,0 +1,38 @@
+.bannerHeading h2 {
+  font-size: 50px;
+  font-weight: 455;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  animation: textAnime 10s linear infinite;
+  transition: 2s;
+}
+
+@keyframes textAnime {
+  0% {
+    background: -webkit-linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: -webkit-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+  }
+}
+
+.homePageContainer{
+    background-color: palegreen;
+    max-width: 1800px;
+    height: 90vh;
+}
+.BannerHeroContainer{
+    background-color: crimson;
+    margin-top: 22px;
+    height: 100%;
+}
