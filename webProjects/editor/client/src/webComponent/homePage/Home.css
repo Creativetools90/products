@@ -1,5 +1,5 @@
 .bannerHeading h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 455;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -13,26 +13,30 @@
     background: -webkit-linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 2s;
   }
   50% {
     background: -webkit-linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 2s;
+    margin-left: 60px;
   }
   100% {
      background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+     transition: 2s;
+     margin-left: 100px;
   }
 }
 
 .homePageContainer{
-    /* background-color: palegreen; */
+
     max-width: 1800px;
     height: 100%;
 }
 .BannerHeroContainer{
-    /* background-color: palevioletred; */
     margin-top: 22px;
     height: 500px;
     display: flex;
@@ -40,20 +44,17 @@
     gap: 0.7rem;
     padding: 5px;
 }
-/* .bannerHeading{
-    background-color: paleturquoise;
-}
+
 .tryNow{
-    background-color: #80d0c7;
-} */
+   margin-top: 10px;
+} 
  .demoBtnLink{
     padding: 10px 20px 15px;
     border-radius: 6px;
     text-transform: capitalize;
     font-weight: 500;
     background: -webkit-linear-gradient(43deg, #364dbd 0%, #ac3ea4 46%, #e1b35c 100%);
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
+
     font-size: 17px;
 
  }
@@ -69,7 +70,6 @@
    
  }
  .g_l_b_btn{
-    background: -webkit-linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
     position: relative;
     padding: 10px 20px 15px;
     border-radius: 6px;
@@ -79,6 +79,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    animation: op 5s linear infinite;
+    transition: 3s;
  }
  .btncover{
     border-radius: 6px;
@@ -92,4 +94,20 @@
     align-items: center;
     justify-content: center;
 
+ }
+
+ @keyframes op {
+    0%{
+        background: -webkit-linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
+        transition: 3s;
+    }
+
+    80%{
+        background:transparent;
+        transition: 3s;
+    }
+    100%{
+        background: -webkit-linear-gradient(43deg, #5069e5 0%, #e065d8 46%, #FFCC70 100%);
+        transition: 3s;
+    }
  }
