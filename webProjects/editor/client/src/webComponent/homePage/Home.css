@@ -41,7 +41,10 @@
     flex-direction: column;
     gap: 0.7rem;
     padding: 5px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    /* background-color: #0093e9; */
+    position: relative;
+    z-index: 888;
 }
 
 .tryNow{

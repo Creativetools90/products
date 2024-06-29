@@ -31,6 +31,8 @@ const Home = () => {
             <div className="BannerHeroContainer  ">
                 <div className="bannerHeading text-center ">
                     <h2>Try & Practice your code in webEditor</h2>
+                    <p className='text-lg subpixel-antialiased capitalize font-medium text-sky-400/100 ' >for html,css,js,typescript,python</p>
+                    <p className='text-lg  text-sky-400/75 subpixel-antialiased capitalize font-medium' >free and usefull editor</p>
                 </div>
                 <div className="tryNow flex items-center gap-6 flex-row justify-center ">
 
@@ -41,6 +43,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+               
             </div>
             <section className="codeBaseContainer">
                 <h3 className='c_heading' >Languages CodeBase</h3>
