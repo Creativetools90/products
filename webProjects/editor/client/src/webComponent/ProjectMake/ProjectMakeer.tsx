@@ -22,7 +22,83 @@ const ProjectMakeer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="projectList"></div>
+                <div className="projectList">
+                    <div className="listMode">
+                        <div className="projectCart">
+                            <div className="pro_img"></div>
+                            <div className="p_nfo">
+                                <div className="ingo01">
+                                <p className="pro_name">demo project</p>
+                                <button>more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projectCart">
+                            <div className="pro_img"></div>
+                            <div className="p_nfo">
+                                <div className="ingo01">
+                                <p className="pro_name">demo project</p>
+                                <button>more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projectCart">
+                            <div className="pro_img"></div>
+                            <div className="p_nfo">
+                                <div className="ingo01">
+                                <p className="pro_name">demo project</p>
+                                <button>more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projectCart">
+                            <div className="pro_img"></div>
+                            <div className="p_nfo">
+                                <div className="ingo01">
+                                <p className="pro_name">demo project</p>
+                                <button>more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projectCart">
+                            <div className="pro_img"></div>
+                            <div className="p_nfo">
+                                <div className="ingo01">
+                                <p className="pro_name">demo project</p>
+                                <button>more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projectCart">
+                            <div className="pro_img"></div>
+                            <div className="p_nfo">
+                                <div className="ingo01">
+                                <p className="pro_name">demo project</p>
+                                <button>more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projectCart">
+                            <div className="pro_img"></div>
+                            <div className="p_nfo">
+                                <div className="ingo01">
+                                <p className="pro_name">demo project</p>
+                                <button>more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="projectCart">
+                            <div className="pro_img"></div>
+                            <div className="p_nfo">
+                                <div className="ingo01">
+                                <p className="pro_name">demo project</p>
+                                <button>more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="tableMode"></div>
+                </div>
             </div>
         </div>
     )

@@ -1,12 +1,10 @@
 .projectMContainer {
-  background-color: rgb(28, 25, 25);
-  /* max-width: 1300px; */
-  /* margin: 2px auto; */
+  background-color:rgb(39, 39, 48);
   padding: 10px;
 }
 
 .proHeader {
-  /* background-color: palevioletred; */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +38,7 @@
     display: flex;
     align-items: center;
     padding: 8px;
-    background-color:#0094e912;
+    background-color:#35458612;
 }
 
 .p_l_bar{
@@ -59,4 +57,62 @@
 .proListing{
     padding: 10px;
     margin-top: 20px;
+}
+.listMode{
+    /* background-color: crimson; */
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.projectCart{
+    background-color: rgb(25, 22, 22);
+    width: 400px;
+    height:300px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: rgba(189, 189, 189, 0.342) 0px 1px 3px, rgba(165, 165, 165, 0.24) 0px 1px 2px;
+}
+.pro_img{
+    background-color: white;
+    width: 100%;
+    height: 70%;
+
+}
+.p_nfo{
+    /* background-color: palevioletred; */
+    width: 100%;
+    height: 30%;
+    margin-top: 3px;
+    padding: 4px;
+}
+
+.ingo01{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ingo01 p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ingo01 button{
+    text-transform: uppercase;
+    color: rgb(175, 189, 255);
+}
+
+@media screen and (max-width:900px) {
+    .projectCart{
+        background-color: rgb(25, 22, 22);
+        width: 100%;
+        height:300px;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 10px;
+        box-shadow: rgba(189, 189, 189, 0.342) 0px 1px 3px, rgba(165, 165, 165, 0.24) 0px 1px 2px;
+    }
 }
