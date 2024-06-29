@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Project.css";
 import CardModeProject from './cardMode/CardModeProject';
 import ListModeProject from './listMode/ListModeProject';
+import { Link } from 'react-router-dom';
 const ProjectMakeer = () => {
     const [gridMode , setGridMode] = useState('card')
     return (
@@ -12,7 +13,9 @@ const ProjectMakeer = () => {
                     <input type="text" className='s_project_list' placeholder='Search...' />
                 </div>
                 <div className="right_p_m">
+                    <Link to="/PublishCode" >
                     <button>new project</button>
+                    </Link>
                 </div>
             </div>
             <div className="proListing">

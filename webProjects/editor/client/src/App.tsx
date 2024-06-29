@@ -6,6 +6,7 @@ import Layout from './webComponent/layout/Layout';
 import Home from './webComponent/homePage/Home';
 import DemoCodeMerge from './webComponent/demoCode/DemoCodeMerge';
 import ProjectMakeer from './webComponent/ProjectMake/ProjectMakeer';
+import ProjectCodeEditor from './webComponent/projectCode/ProjectCode';
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/projectDashbord' element={<ProjectMakeer/>} />
           </Route>
           <Route path='/demoCode' element={<DemoCodeMerge/>} />
+          <Route path='/PublishCode' element={<ProjectCodeEditor/>} />
         </Routes>
         </BrowserRouter>
       </MyContext>
