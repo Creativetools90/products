@@ -5,6 +5,7 @@ import "./App.css";
 import Layout from './webComponent/layout/Layout';
 import Home from './webComponent/homePage/Home';
 import DemoCodeMerge from './webComponent/demoCode/DemoCodeMerge';
+import ProjectMakeer from './webComponent/ProjectMake/ProjectMakeer';
 const App = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Layout/>} >
           <Route index element={<Home/>} />
+          <Route path='/projectDashbord' element={<ProjectMakeer/>} />
           </Route>
           <Route path='/demoCode' element={<DemoCodeMerge/>} />
         </Routes>

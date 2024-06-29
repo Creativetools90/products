@@ -1,0 +1,62 @@
+.projectMContainer {
+  background-color: rgb(28, 25, 25);
+  /* max-width: 1300px; */
+  /* margin: 2px auto; */
+  padding: 10px;
+}
+
+.proHeader {
+  /* background-color: palevioletred; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 30px;
+}
+
+.left_p_m {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.left_p_m p {
+  background-color: var(--lightBLue);
+  padding: 6px 22px 10px;
+  text-transform: capitalize;
+}
+.left_p_m input {
+  padding: 6px;
+  color: rgb(255, 255, 255);
+  background-color: var(--lightBLue);
+}
+
+.right_p_m button {
+    background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  padding: 6px 22px 10px;
+  text-transform: capitalize;
+}
+
+
+.pro_gridBar{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color:#0094e912;
+}
+
+.p_l_bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.g_icon{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.proListing{
+    padding: 10px;
+    margin-top: 20px;
+}

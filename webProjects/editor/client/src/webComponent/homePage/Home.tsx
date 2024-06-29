@@ -39,7 +39,7 @@ const Home = () => {
                     <Link to="/demoCode" className='demoBtnLink' >try demo code</Link>
                     <div className="g_l_b_btn">
                         <div className="btncover">
-                            <Link to="/demoCode" className='m_pro_link' >Make Project</Link>
+                            <Link to="/projectDashbord" className='m_pro_link' >Make Project</Link>
                         </div>
                     </div>
                 </div>
