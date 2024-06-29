@@ -1,6 +1,7 @@
 import React, { useState, useContext, useRef, useEffect } from 'react';
 import { ThemeContext } from '../../context/myContext';
 import FullOutput from '../EditorNode/fullOutput/FullOutput';
+import { Link } from 'react-router-dom';
 import "./COdeLayout.css";
 
 const CodeLayout = ({ onThemeChange }) => {
@@ -38,7 +39,7 @@ const CodeLayout = ({ onThemeChange }) => {
         <div className="codeLayoutStripe">
             <div className="productName">
                 <div className="projectTitle">
-                    <img width="35" height="35" src="https://img.icons8.com/nolan/64/project.png" alt="project" />
+                   <Link to="/" > <img width="35" height="35" src="https://img.icons8.com/nolan/64/project.png" alt="project" /></Link>
                     <div className="title">
                         <p className="Pt" onClick={() => setTitleShow(!titleShow)}>{titleEdit}</p>
                         <span className="fileName">/index.html</span>
