@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Project.css";
+import CardModeProject from './cardMode/CardModeProject';
+import ListModeProject from './listMode/ListModeProject';
 const ProjectMakeer = () => {
+    const [gridMode , setGridMode] = useState('card')
     return (
         <div className="projectMContainer">
             <div className="proHeader">
@@ -17,87 +20,15 @@ const ProjectMakeer = () => {
                     <div className="p_l_bar">
                         grid
                         <div className="g_icon">
-                        <img width="25" style={{background:"white"}}  height="25" src="https://img.icons8.com/ios-filled/50/000000/grid.png" alt="grid"/>
-                        <img width="25" style={{background:"white"}} height="25" src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" alt="menu--v1"/>
+                            <img width="25" onClick={()=>setGridMode("card")} style={{ background: "white" }} height="25" src="https://img.icons8.com/ios-filled/50/000000/grid.png" alt="grid" />
+                            <img width="25"  onClick={()=>setGridMode("list")} style={{ background: "white" }} height="25" src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" alt="menu--v1" />
                         </div>
                     </div>
                 </div>
                 <div className="projectList">
-                    <div className="listMode">
-                        <div className="projectCart">
-                            <div className="pro_img"></div>
-                            <div className="p_nfo">
-                                <div className="ingo01">
-                                <p className="pro_name">demo project</p>
-                                <button>more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projectCart">
-                            <div className="pro_img"></div>
-                            <div className="p_nfo">
-                                <div className="ingo01">
-                                <p className="pro_name">demo project</p>
-                                <button>more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projectCart">
-                            <div className="pro_img"></div>
-                            <div className="p_nfo">
-                                <div className="ingo01">
-                                <p className="pro_name">demo project</p>
-                                <button>more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projectCart">
-                            <div className="pro_img"></div>
-                            <div className="p_nfo">
-                                <div className="ingo01">
-                                <p className="pro_name">demo project</p>
-                                <button>more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projectCart">
-                            <div className="pro_img"></div>
-                            <div className="p_nfo">
-                                <div className="ingo01">
-                                <p className="pro_name">demo project</p>
-                                <button>more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projectCart">
-                            <div className="pro_img"></div>
-                            <div className="p_nfo">
-                                <div className="ingo01">
-                                <p className="pro_name">demo project</p>
-                                <button>more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projectCart">
-                            <div className="pro_img"></div>
-                            <div className="p_nfo">
-                                <div className="ingo01">
-                                <p className="pro_name">demo project</p>
-                                <button>more</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projectCart">
-                            <div className="pro_img"></div>
-                            <div className="p_nfo">
-                                <div className="ingo01">
-                                <p className="pro_name">demo project</p>
-                                <button>more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="tableMode"></div>
+                    {
+                        gridMode === "card" ? <CardModeProject/> : <ListModeProject/>
+                    }
                 </div>
             </div>
         </div>

@@ -5,9 +5,11 @@ const Navbar = () => {
     return (
         <header className="header ">
             <div className="logo">
-                <h2 className="logo textLogo">
+               <Link to="/" >
+               <h2 className="logo textLogo">
                     creativeEdit
                 </h2>
+               </Link>
 
             </div>
             <div className="menus">
