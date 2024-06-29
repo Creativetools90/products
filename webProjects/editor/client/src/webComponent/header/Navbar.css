@@ -31,11 +31,11 @@
     border: none;
     text-transform: capitalize;
     background-color: var(--lightBLue);
-    box-shadow: 5px 5px 12px #435ea1a9;
+    /* box-shadow: 5px 5px 12px #435ea1a9; */
 }
 .navAction.outLinedButton{
     background-color: transparent;
     border: 1px solid var(--lightBLue);
-    box-shadow: 5px 5px 10px #435ea174;
+    /* box-shadow: 5px 5px 10px #435ea174; */
 }
 
