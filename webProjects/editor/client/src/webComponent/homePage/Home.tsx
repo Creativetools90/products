@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Editor from "@monaco-editor/react";
-import "./Home.css"
-const Home = () => {
-    const [demoInput , setDemoInput] = useState(`<!DOCTYPE html>
+import "./Home.css";
+
+const Home: React.FC = () => {
+    const [demoInput, setDemoInput] = useState<string>(`<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -21,39 +22,36 @@ const Home = () => {
 <h1>Creativetools WebCode_editor</h1>
 <p>this si demo code contaienr </p>
 <button>do coding </button>
-
 <!-- Prss Enter -->
 </body>
 </html>
 `);
-    return (
-        <div className='homePageContainer p-2 m-auto my-4 ' >
-            <div className="BannerHeroContainer  ">
-                <div className="bannerHeading text-center ">
-                    <h2>Try & Practice your code in webEditor</h2>
-                    <p className='text-lg subpixel-antialiased capitalize font-medium text-sky-400/100 ' >for html,css,js,typescript,python</p>
-                    <p className='text-lg  text-sky-400/75 subpixel-antialiased capitalize font-medium' >free and usefull editor</p>
-                </div>
-                <div className="tryNow flex items-center gap-6 flex-row justify-center ">
 
-                    <Link to="/demoCode" className='demoBtnLink' >try demo code</Link>
+    return (
+        <div className='homePageContainer p-2 m-auto my-4'>
+            <div className="BannerHeroContainer">
+                <div className="bannerHeading text-center">
+                    <h2>Try & Practice your code in webEditor</h2>
+                    <p className='text-lg subpixel-antialiased capitalize font-medium text-sky-400/100'>for html, css, js, typescript, python</p>
+                    <p className='text-lg text-sky-400/75 subpixel-antialiased capitalize font-medium'>free and useful editor</p>
+                </div>
+                <div className="tryNow flex items-center gap-6 flex-row justify-center">
+                    <Link to="/demoCode" className='demoBtnLink'>try demo code</Link>
                     <div className="g_l_b_btn">
                         <div className="btncover">
-                            <Link to="/projectDashbord" className='m_pro_link' >Make Project</Link>
+                            <Link to="/projectDashbord" className='m_pro_link'>Make Project</Link>
                         </div>
                     </div>
                 </div>
-               
             </div>
             <section className="codeBaseContainer">
-                <h3 className='c_heading' >Languages CodeBase</h3>
+                <h3 className='c_heading'>Languages CodeBase</h3>
                 <div className="code_snippet">
                     <div className="s_01_">
-
                         <Editor
                             height="calc(100vh - 50px)"
                             width="100%"
-                            theme={"vs-dark"} // Change this to 'vs', 'vs-dark', or 'hc-black'
+                            theme={"vs-dark"}
                             defaultLanguage="html"
                             defaultValue={`<!DOCTYPE html>
 <html lang="en">
@@ -66,8 +64,7 @@ const Home = () => {
     <h1>Creativetools WebCode_editor</h1>
     <!-- Prss Enter -->
 </body>
-</html>
-                    `}
+</html>`}
                             options={{
                                 fontSize: 11,
                                 minimap: { enabled: false },
@@ -77,29 +74,26 @@ const Home = () => {
                                     top: 10,
                                     bottom: 10
                                 },
-
-                                wordWrap: "on", // Enable word wrap
-                                formatOnType: true, // Disable format on type
-                                formatOnPaste: true, // Disable format on paste
+                                wordWrap: "on",
+                                formatOnType: true,
+                                formatOnPaste: true,
                             }}
                         />
                     </div>
                     <div className="s_01_">
-
                         <Editor
                             height="calc(100vh - 50px)"
                             width="100%"
-                            theme={"vs-dark"} // Change this to 'vs', 'vs-dark', or 'hc-black'
+                            theme={"vs-dark"}
                             defaultLanguage="javascript"
                             defaultValue={`let count = 0;
-const counter=()=>{
-count++;
+const counter = () => {
+    count++;
 }
 
 counter();
 counter();
-counter();
-                                `}
+counter();`}
                             options={{
                                 fontSize: 11,
                                 minimap: { enabled: false },
@@ -109,28 +103,25 @@ counter();
                                     top: 10,
                                     bottom: 10
                                 },
-
-                                wordWrap: "on", // Enable word wrap
-                                formatOnType: true, // Disable format on type
-                                formatOnPaste: true, // Disable format on paste
+                                wordWrap: "on",
+                                formatOnType: true,
+                                formatOnPaste: true,
                             }}
                         />
                     </div>
                     <div className="s_01_">
-
                         <Editor
                             height="calc(100vh - 50px)"
                             width="100%"
-                            theme={"vs-dark"} // Change this to 'vs', 'vs-dark', or 'hc-black'
+                            theme={"vs-dark"}
                             defaultLanguage="python"
                             defaultValue={`count = 0
 def counter():
-    count+=1
+    count += 1
 
 counter()
 counter()
-counter()
-                    `}
+counter()`}
                             options={{
                                 fontSize: 11,
                                 minimap: { enabled: false },
@@ -140,14 +131,12 @@ counter()
                                     top: 10,
                                     bottom: 10
                                 },
-
-                                wordWrap: "on", // Enable word wrap
-                                formatOnType: true, // Disable format on type
-                                formatOnPaste: true, // Disable format on paste
+                                wordWrap: "on",
+                                formatOnType: true,
+                                formatOnPaste: true,
                             }}
                         />
                     </div>
-
                 </div>
             </section>
             <section className="Movingcontainer">
@@ -161,23 +150,19 @@ counter()
                         <p className="item">c</p>
                         <p className="item">java</p>
                     </div>
-
-
-
                 </div>
             </section>
-            <section className='demoHomeCode' >
+            <section className='demoHomeCode'>
                 <div className="cvw-01-heaing">
-                   <p> how doing some demo editing !</p>
+                    <p>How doing some demo editing!</p>
                 </div>
                 <div className="democodeBaseLayout">
                     <div className="s_01_01">
-
                         <Editor
                             height="calc(100vh - 50px)"
                             width="100%"
-                            theme={"vs-dark"} // Change this to 'vs', 'vs-dark', or 'hc-black'
-                            onChange={(e:any)=>setDemoInput(e)}
+                            theme={"vs-dark"}
+                            onChange={(value) => setDemoInput(value || '')}
                             defaultLanguage="html"
                             defaultValue={`<!DOCTYPE html>
 <html lang="en">
@@ -199,8 +184,7 @@ counter()
 <button>do coding </button>
 <!-- Prss Enter -->
 </body>
-</html>
-`}
+</html>`}
                             options={{
                                 fontSize: 15,
                                 minimap: { enabled: false },
@@ -210,24 +194,23 @@ counter()
                                     top: 10,
                                     bottom: 10
                                 },
-
-                                wordWrap: "on", // Enable word wrap
-                                formatOnType: true, // Disable format on type
-                                formatOnPaste: true, // Disable format on paste
+                                wordWrap: "on",
+                                formatOnType: true,
+                                formatOnPaste: true,
                             }}
                         />
                     </div>
                     <div className="demores">
-                    <iframe
-                title="Output"
-                style={{ width: '100%', height: '100%', border: 'none' }}
-                srcDoc={demoInput}
-            />
+                        <iframe
+                            title="Output"
+                            style={{ width: '100%', height: '100%', border: 'none' }}
+                            srcDoc={demoInput}
+                        />
                     </div>
                 </div>
             </section>
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;
