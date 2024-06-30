@@ -87,3 +87,6 @@ border: 1px solid var(--light_sky_blue);
     font-size: 15px;
     border-radius: 5px;
 }
+.clickable_tag_lang{
+    cursor: pointer;
+}

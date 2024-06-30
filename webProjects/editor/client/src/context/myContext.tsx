@@ -32,10 +32,45 @@ export const MyContext: React.FC<MyContextProps> = (props) => {
 </body>
 </html>
 `);
+interface Programming_Languages{
+    id : number;
+    LangName: string;
+    LangThemeColor : string;
+}
     const [inputHtml, setInputHtml] = useState('');
     const [themeMode, setThemeMode] = useState('dark');
     const [titleEdit, setTitleEdit] = useState("demo-project");
-
+    const [lang , setLang] = useState<Programming_Languages[]>([
+        {
+            id : 1,
+            LangName:"react",
+            LangThemeColor:"react_tag",
+        },
+        {
+            id : 2,
+            LangName:"html",
+            LangThemeColor:"html_tag",
+        },
+        {
+            id : 3,
+            LangName:"css",
+            LangThemeColor:"css_tag",
+        },
+        {
+            id : 4,
+            LangName:"javascript",
+            LangThemeColor:"js_tag",
+        },
+        {
+            id : 5,
+            LangName:"typescript",
+            LangThemeColor:"ts_tag"
+        }
+    ]);
+    const addLanguage = (Programming_Languages: Programming_Languages) => {
+        setLang([...lang, Programming_Languages]);
+      };
+    
     const toggleTheme = () => {
         setThemeMode((prevTheme) => (prevTheme === 'dark' ? 'white' : 'dark'));
     };
@@ -50,7 +85,9 @@ export const MyContext: React.FC<MyContextProps> = (props) => {
         themeMode,
         toggleTheme,
         titleEdit,
-        setTitleEdit
+        setTitleEdit,
+        lang , 
+        addLanguage
     };
 
     return (

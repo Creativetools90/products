@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./CardMode.css"
+import Lang from '../lang/Lang';
 const CardModeProject = () => {
   const [open, setOpen] = useState<void>();
   return (
@@ -17,14 +18,7 @@ const CardModeProject = () => {
             <button onClick={() => setOpen(!open)} >more</button>
           </div>
           <div className="project_useLag_tag">
-            <ul className="t_0001">
-              <li className="proj_l_tab react_tag">react</li>
-              <li className="proj_l_tab html_tag">html</li>
-              <li className="proj_l_tab css_tag">css</li>
-              <li className="proj_l_tab js_tag">javascript</li>
-              <li className="proj_l_tab ts_tag">typescript</li>
-              <li className="proj_l_tab py_tag">python</li>
-            </ul>
+           <Lang/>
           </div>
         </div>
         <div className="morepsetting" style={open ? { display: "flex" } : { display: "none" }} >
