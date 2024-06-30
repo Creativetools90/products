@@ -7,7 +7,7 @@ import Home from './webComponent/homePage/Home';
 import DemoCodeMerge from './webComponent/demoCode/DemoCodeMerge';
 import ProjectMakeer from './webComponent/ProjectMake/ProjectMakeer';
 import ProjectCodeEditor from './webComponent/projectCode/ProjectCode';
-
+import PlaygroundEditor from './playgroundeditor/PlaygroundEditor';
 const App: React.FC = () => {
   return (
     <>
@@ -19,6 +19,7 @@ const App: React.FC = () => {
               <Route path='/projectDashbord' element={<ProjectMakeer />} />
             </Route>
             <Route path='/demoCode' element={<DemoCodeMerge />} />
+            <Route path='/playground' element={<PlaygroundEditor />} />
             <Route path='/PublishCode' element={<ProjectCodeEditor />} />
           </Routes>
         </BrowserRouter>

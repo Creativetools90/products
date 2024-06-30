@@ -3,11 +3,13 @@ import "./Project.css";
 import CardModeProject from './cardMode/CardModeProject';
 import ListModeProject from './listMode/ListModeProject';
 import { Link } from 'react-router-dom';
+import ProjectForm from './ProjectForm';
 
 const ProjectMakeer: React.FC = () => {
     const [gridMode, setGridMode] = useState<'card' | 'list'>('card');
-
+    const [projectFormShow , setProjectFormShow] = useState<boolean>();
     return (
+        <>
         <div className="projectMContainer">
             <div className="proHeader">
                 <div className="left_p_m">
@@ -15,9 +17,8 @@ const ProjectMakeer: React.FC = () => {
                     <input type="text" className='s_project_list' placeholder='Search...' />
                 </div>
                 <div className="right_p_m">
-                    <Link to="/PublishCode">
-                        <button>new project</button>
-                    </Link>
+                        <button onClick={()=>setProjectFormShow(!projectFormShow)} >new project</button>
+                   
                 </div>
             </div>
             <div className="proListing">
@@ -49,6 +50,8 @@ const ProjectMakeer: React.FC = () => {
                 </div>
             </div>
         </div>
+        <ProjectForm toggle={projectFormShow} setToggle={setProjectFormShow} />
+        </>
     );
 }
 

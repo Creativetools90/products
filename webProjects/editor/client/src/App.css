@@ -2,6 +2,17 @@
 :root{
   /* --lightBLue : #38518f; */
   --lightBLue : #4158D0;
+  --blue-3b : #3ba0ed98;
+  --blue-3b6d : #3b6dedc9;
+  --blue-37b2:#37b2ffc9;
+  --blue-3b56 : #3b56edc9;
+  --light_sky_blue : rgb(25, 112, 194);
+  --orange-f799: #f79037da;
+  --yellow-ffe13 : #ffe136e8;
+  --project_tab_blur: 10px;
+  --project_window_bg:rgba(26, 26, 31, 0.801);
+  --dark-gray-black:rgba(0, 0, 0, 0.277);
+  --dark_g_l_black_rgb:#242424;
 }
 *{
   margin: 0;
