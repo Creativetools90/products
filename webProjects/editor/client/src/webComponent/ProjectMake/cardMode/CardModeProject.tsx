@@ -18,7 +18,7 @@ const CardModeProject = () => {
             <button onClick={() => setOpen(!open)} >more</button>
           </div>
           <div className="project_useLag_tag">
-           <Lang/>
+           <Lang  class="clickable_tag_lang" />
           </div>
         </div>
         <div className="morepsetting" style={open ? { display: "flex" } : { display: "none" }} >

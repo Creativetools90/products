@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ProjecForm.css";
 import Lang from './lang/Lang';
-
+import {Link} from "react-router-dom";
 const ProjectForm = (props) => {
 
     return (
@@ -23,11 +23,13 @@ const ProjectForm = (props) => {
                             <div className="chooseLang" style={{
                                 marginTop:"10px"
                             }} >
-                               <Lang/>
+                               <Lang class="clickable_tag_lang" />
                             </div>
                         </div>
                         <div className="sub">
+                            <Link  to="/playground" >
                             <button className='s_create' >create</button>
+                            </Link>
                         </div>
                     </form>
                 </div>
