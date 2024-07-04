@@ -1,10 +1,11 @@
 :root{
     --mainPaddng : 2px;
     --blackWindow : rgb(31, 31, 31);
+    --purple :rgba(114, 96, 232, 0.932); 
 }
 .playgroundContainer{
     /* background-color: rgb(187, 250, 28); */
-    background-color: rgba(114, 96, 232, 0.932);
+    background-color: var(--purple);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -60,9 +61,14 @@
 .folderMarking  img {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 .folderName{
     font-size: 17px;
+    cursor: pointer;
+}
+.folderName:hover{
+    color: var(--purple);
 }
 .folderd{
     display: flex;
@@ -130,8 +136,8 @@
 }
 .bottom{
     background-color: var(--blackWindow);
-    /* flex: 1; */
-    flex: .1;
+    flex: 1;
+    /* flex: .1; */
     width: 100%;
     margin-top: 2px;
     padding: var(--mainPaddng);
@@ -153,7 +159,7 @@
 .previewRender{
     background-color: var(--blackWindow);
     flex: 2.5;
-    flex: 0.1;
+    /* flex: 0.1; */
     font-size: 30px;
     padding: var(--mainPaddng);
 }
