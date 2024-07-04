@@ -18,14 +18,14 @@ const Api = [
       file_limit: 2,
     },
     {
-      id: 1,
+      id: 3,
       type: "file",
       Name: "App.js",
       fileType : "js",
       content: "",
     },
     {
-      id: 3,
+      id: 4,
       type: "folder",
       Name: "Root_folder",
       file_list: [
@@ -55,7 +55,7 @@ const Api = [
       
     },
     {
-      id: 4,
+      id: 5,
       type: "folder",
       Name: "BackendData",
       file_list: [
@@ -85,6 +85,27 @@ const Api = [
       ],
       
     },
+    {
+        id: 5,
+        type: "file",
+        Name: "Main.js",
+        fileType : "js",
+        content: "",
+      },
+    {
+        id: 6,
+        type: "file",
+        Name: "Main.ts",
+        fileType : "ts",
+        content: "",
+      },
+    {
+        id: 7,
+        type: "file",
+        Name: "Route.ts",
+        fileType : "ts",
+        content: "",
+      },
   ];
   
   
