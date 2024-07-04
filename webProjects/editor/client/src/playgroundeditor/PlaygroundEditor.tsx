@@ -8,18 +8,53 @@ const PlaygroundEditor = () => {
         <h2>tab bar</h2>
       </div>
       <div className="ediorbar">
+      
         <div className="exploere">
-          <h2>explorere</h2>
+        <div className="ex_heading">
+          <h4>EDITOR</h4>
+        </div>
+          <div className="expolerManagment">
+            <div className="treeView">
+              <div className="folderContainer">
+                <div className="folderMarking">
+                   <div className="toggleFileView"></div>
+                  <div className="folderd">
+                    <img src="./icons/folder.png" alt="" />
+                  <p className="folderName">Folder</p>
+                  </div>
+                </div>
+                <div className="insertFoldersystem">
+                  <div className="indent"></div>
+                  <div className="folderData">
+                    <div className="filesContainer">
+                      <ul className="fileList">
+                          <li className="fileName">
+                            <img src="./icons/html.png" alt="" />
+                            index.html</li>
+                          <li className="fileName">
+                            <img src="./icons/css.png" alt="" />
+                            style.css</li>
+                          <li className="fileName">
+                            <img src="./icons/js.png" alt="" />
+                            script.js</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
         </div>
         <div className="editingContainer">
           <div className="top">
             <div className="codeWriter">
-             <div className="eidtCode">
-             <Editor
-                height="100%"
-                theme={'vs-dark'} // Change this to 'vs', 'vs-dark', or 'hc-black'
-                defaultLanguage="html"
-                defaultValue={`<!DOCTYPE html>
+              <div className="eidtCode">
+                <Editor
+                  height="100%"
+                  theme={'vs-dark'} // Change this to 'vs', 'vs-dark', or 'hc-black'
+                  defaultLanguage="html"
+                  defaultValue={`<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -40,21 +75,21 @@ const PlaygroundEditor = () => {
 <!-- Prss Enter -->
 </body>
 </html>`}
-                options={{
-                  fontSize: 20,
-                  minimap: { enabled: false },
-                  lineNumbers: "on",
-                  automaticLayout: true,
-                  padding: {
-                    top: 10,
-                    bottom: 10
-                  },
-                  wordWrap: "on", // Enable word wrap
-                  formatOnType: true, // Enable format on type
-                  formatOnPaste: true, // Enable format on paste
-                }}
-              />
-             </div>
+                  options={{
+                    fontSize: 20,
+                    minimap: { enabled: false },
+                    lineNumbers: "on",
+                    automaticLayout: true,
+                    padding: {
+                      top: 10,
+                      bottom: 10
+                    },
+                    wordWrap: "on", // Enable word wrap
+                    formatOnType: true, // Enable format on type
+                    formatOnPaste: true, // Enable format on paste
+                  }}
+                />
+              </div>
             </div>
             <div className="previewRender">
               <h2>preview</h2>

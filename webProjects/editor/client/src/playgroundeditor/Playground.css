@@ -1,14 +1,15 @@
 :root{
-    --blackWindow : #292828;
+    --mainPaddng : 2px;
+    --blackWindow : rgb(31, 31, 31);
 }
 .playgroundContainer{
     /* background-color: rgb(187, 250, 28); */
-    background-color: rgb(90, 81, 135);
+    background-color: rgba(114, 96, 232, 0.932);
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: var(--mainPaddng);
 }
 .tabContainer{
     padding: 10px;
@@ -18,17 +19,96 @@
     /* background-color: peru; */
     display: flex;
     height: 100%;
-    padding-top: 4px;
-    gap: 5px;
+    padding: var(--mainPaddng);
+    gap: 2px;
 
+
+}
+.ex_heading{
+    padding-left: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .exploere{
     background-color: var(--blackWindow);
     flex: 0.7;
     /* flex: 0.1; */
-    padding: 4px;
+    padding: var(--mainPaddng);
 }
+
+.treeView{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+.folderContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.folderMarking{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 2px 2px 4px ;
+}
+
+.folderMarking  img {
+    width: 24px;
+    height: 24px;
+}
+.folderName{
+    font-size: 17px;
+}
+.folderd{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.insertFoldersystem{
+    display: flex;
+}
+.indent{
+    flex: 0.3;
+}
+
+.folderData{
+   flex: 2;
+}
+
+
+.fileName img {
+    width: 24px;
+    height: 24px;
+}
+.fileName{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+
+.fileList{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.toggleFileView{
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+}
+
+
+
 
 .editingContainer{
    background-color: rgb(90, 81, 135);
@@ -42,26 +122,23 @@
     display: flex;
     width: 100%;
     flex: 3;
-    gap: 5px;
+    gap: 2px;
 }
 .bottom{
     background-color: var(--blackWindow);
-    flex: 1;
-    /* flex: .1; */
+    /* flex: 1; */
+    flex: .1;
     width: 100%;
-    margin-top: 5px;
-    padding: 4px;
+    margin-top: 2px;
+    padding: var(--mainPaddng);
 }
 .codeWriter{
-    /* background-color: brown; */
     flex: 4;
-    /* padding: 20px; */
     overflow: hidden;
     height: 100%;
     position: relative;
 }
 .eidtCode{
-    /* background-color: darkgoldenrod; */
     position: absolute;
     top: 0;
     left: 0;
@@ -72,7 +149,7 @@
 .previewRender{
     background-color: var(--blackWindow);
     flex: 2.5;
-    /* flex: 0.1; */
+    flex: 0.1;
     font-size: 30px;
-    padding: 4px;
+    padding: var(--mainPaddng);
 }
