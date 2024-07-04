@@ -32,7 +32,7 @@
     font-size: 20px;
 }
 
-.exploere{
+.explorer{
     background-color: var(--blackWindow);
     flex: 0.7;
     /* flex: 0.1; */
@@ -90,6 +90,10 @@
     align-items: center;
     gap: 5px;
     color: white;
+    cursor: pointer;
+}
+.fileName:hover{
+    color:rgb(213, 213, 213);
 }
 
 
