@@ -78,7 +78,7 @@ const FileSystem = () => {
               <File
                 fileName={
                   <li className="fileName" key={val.id}>
-                    
+                    <img src={fileTypeIcons(val.fileType)} />
                     {val.Name}
                   </li>
                 }

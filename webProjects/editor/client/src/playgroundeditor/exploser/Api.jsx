@@ -21,6 +21,7 @@ const Api = [
       id: 1,
       type: "file",
       Name: "App.js",
+      fileType : "js",
       content: "",
     },
     {
